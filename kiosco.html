@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosco</title>
+    <link rel="stylesheet" href="style/kiosco.css">
+</head>
+
+<body>
+    <main>
+        <div class="Columna_Categorias">
+            <div class="Columna_Categorias_Informacion">
+                <img src="Images/Iconos/Flecha_Atras.png" alt="">
+                <p>Kiosco</p>
+            </div>
+            <div class="Contenedor_Categorias">
+                <button onclick="mostrarCategoria('Bebidas')">
+                    <img src="Images/Iconos/Icono_Bebidas.png" alt="">
+                    <p>Bebidas</p>
+                </button>
+                <button onclick="mostrarCategoria('Alfajores')">
+                    <img src="Images/Iconos/Icono_Alfajores.png" alt="">
+                    <p>Alfajores</p>
+                </button>
+                <button onclick="mostrarCategoria('Galletitas')">
+                    <img src="Images/Iconos/Icono_Galletitas.png" alt="">
+                    <p>Galletitas</p>
+                </button>
+                <button onclick="mostrarCategoria('Comidas')">
+                    <img src="Images/Iconos/Icono_Comidas.png" alt="">
+                    <p>Comidas</p>
+                </button>
+                <button onclick="mostrarCategoria('Helados')">
+                    <img src="Images/Iconos/Icono_Helados.png" alt="">
+                    <p>Helados</p>
+                </button>
+                <button onclick="mostrarCategoria('Golosinas')">
+                    <img src="Images/Iconos/Icono_Golosinas.png" alt="">
+                    <p>Golosinas</p>
+                </button>
+                <button onclick="mostrarCategoria('Snacks')">
+                    <img src="Images/Iconos/Icono_Snacks.png" alt="">
+                    <p>Snacks</p>
+                </button>
+                <button onclick="mostrarCategoria('Cafeteria')">
+                    <img src="Images/Iconos/Icono_Cafeteria.png" alt="">
+                    <p>Cafeteria</p>
+                </button>
+                <button onclick="mostrarCategoria('Promos')">
+                    <img src="Images/Iconos/Icono_Promos.png" alt="">
+                    <p>Promos</p>
+                </button>
+            </div>
+        </div>
+        <div class="Columna_Productos">
+            <div class="Columna_Productos_Informacion">
+
+                <p id="Nombre_Categoria_Seleccionada" class="Nombre_Categoria">Bebidas</p>
+            </div>
+            <div class="Contenedor_Productos" id="Contenedor_Productos">
+                <!-- Los productos se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="Footer_Barra">Mi Orden - Kiosco</div>
+        <div class="Footer_Contenedor_Orden">Tu orden está vacía</div>
+        <div class="Footer_Contenedor_Botones">
+            <button id="Boton_Cancelar">Cancelar orden</button>
+            <button id="Boton_Continuar">Continuar</button>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="js/kiosco.js"></script>
